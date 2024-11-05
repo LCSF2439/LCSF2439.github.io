@@ -64,17 +64,17 @@ main {
 	padding: 2%;
 	background-color: #e5e9fc;
 	overflow: auto;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'Kanit', Verdana, sans-serif;
 	color:#373684;
 	text-align: justify;
 }
 
 main p {
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 .action {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	color: #373684;
 	font-weight: bold;
 }
@@ -85,6 +85,18 @@ main p {
 	margin: 0 3%;
 }
 
+#cryochill h3, #cryogenic h3, #medice h3 {
+	font-size: 1.5em;
+}
+
+#cryochill p, #cryogenic p, #medice p {
+	font-size: 1.5em;
+}
+
+#cryochill li, #cryogenic li, #medice li {
+	font-size: 1.2em;
+}
+
 /*.equip {
 	width: 23%;
 }*/
@@ -93,6 +105,10 @@ main p {
 	clear: left;
 	background-color: #c0caf7;
 	padding: 1% 2%;
+}
+
+#info li {
+	font-size: 1.2em;
 }
 
 #contact {
@@ -130,14 +146,14 @@ main p {
 
 .banner h1 {
 	background-color: white;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	margin: 0;
 	color:#373684;
 }
 
 .banner p {
 	background-color: white;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	margin-bottom: 40px;
 	color:#373684;
 }
@@ -148,7 +164,7 @@ main p {
 	padding: 1% 2%;
 	text-decoration: none;
 	border-radius: 5px;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 /* Benefits Section */
@@ -178,11 +194,11 @@ main p {
 
 .benefit h3 {
 	color: #373684;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 
 .benefit p {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: #373684;
 }
 
