@@ -187,11 +187,11 @@ main ul {
 
 .benefit h3 {
 	color: #373684;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .benefit p {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #373684;
 }
 
@@ -233,7 +233,7 @@ footer a {
 		display: none;
 	}
 
-	/* Desktop Viewport: Style rules for header content */
+	/* Tablet Viewport: Style rules for header content */
 	header {
 		background-image: url('../images/banner_4.png');
 		background-position: center;
@@ -301,6 +301,7 @@ footer a {
 		background-image: url('../images/banner_2.jpeg'); /* Placeholder for banner image */
 		background-size: cover;
 		background-position: center;
+		background-attachment: fixed;    /* Background does not scroll with the page */
 		color: rgb(240, 240, 240);
 		text-align: center;
 		padding: 6% 2%;
@@ -315,18 +316,31 @@ footer a {
 
 	.banner p {
 		background-color: rgb(240, 240, 240);
-		font-size: 1.8rem;
+		font-size: 2.5rem;
 		margin-bottom: 5%;
 		color:#373684;
 	}
 
+	
+	.banner a {
+		font-size: 3rem;
+	}
+
 	.cta-button {
+		display: inline-block;     /* Makes the button size fit the content */
 		background-color: #373684;
 		color: rgb(240, 240, 240);
 		padding: 1% 2%;
 		text-decoration: none;
 		border-radius: 5px;
-		font-size: 1.5rem;
+		width: 40%;
+		/*transition: background-color 0.1s ease; /* Smooth background transition */
+	}
+
+	.cta-button:hover {
+		background-color: rgb(240, 240, 240);
+		color:  #373684;
+		border: 1px solid #373684;
 	}
 
 	/* Benefits Section */
@@ -354,15 +368,6 @@ footer a {
 		border-radius: 5px;
 	}
 
-	.benefit h3 {
-		color: #373684;
-		font-size: 1.5rem;
-	}
-
-	.benefit p {
-		font-size: 1.5rem;
-		color: #373684;
-	}
 
 	/* end Style rules for page Specials */
 	
@@ -516,10 +521,19 @@ footer a {
 	
 }
 
+/* Media Query for Intermediate Desktop Viewports */
+@media screen and (min-width: 1499px) {
+
+	body {
+		font-size: 2em;
+	}
+
+}
+
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
 
-	#container {
+	body {
 		width: 1920px;
 		margin: 0 auto;
 	}
