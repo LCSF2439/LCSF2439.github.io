@@ -5,21 +5,22 @@ File Name: about.css
 */
 
 /* Mobile Viewport */
+
 #cryochill, #cryogenic, #medice {
 	margin: 0 3%;
 	justify-content: center;
 }
 
 #cryochill h3, #cryogenic h3, #medice h3 {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #cryochill p, #cryogenic p, #medice p {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #cryochill li, #cryogenic li, #medice li {
-	font-size: 1.2em;
+	font-size: 0.7em;
 }
 
 #info {
@@ -28,17 +29,57 @@ File Name: about.css
 	padding: 1% 2%;
 }
 
+#info h2 {
+	font-size: 1em;
+}
+
+#info p {
+	font-size: 0.7em;
+}
+
+
 #info li {
-	font-size: 1.2em;
+	font-size: 0.7em;
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 800px), print {
+@media screen and (min-width: 751px), print {
 	
 	#cryochill, #cryogenic, #medice {
 		width: 27%;
 		float: left;
-		margin: 0 3%;
+		margin: 0 3%
+	}
+
+	#cryochill h3, #cryogenic h3, #medice h3 {
+		font-size: 1.5em;
+	}
+	
+	#cryochill p, #cryogenic p, #medice p {
+		font-size: 1.5em;
+	}
+	
+	#cryochill li, #cryogenic li, #medice li {
+		font-size: 1.2em;
+	}
+
+	#info {
+		clear: left;
+		background-color: #c0caf7;
+		padding: 1% 2%;
+	}
+	
+	#info h2 {
+		font-size: 1.5em;
+	}
+	
+	#info p {
+		font-size: 1.2em;
+	}
+	
+	
+	#info li {
+		font-size: 1.2em;
 	}
 
 }
