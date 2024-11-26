@@ -11,6 +11,10 @@ section {
     margin: 1% 0;
 }
 
+section h2 {
+	font-size: 2em;
+}
+
 article {
     background-color: rgb(240, 240, 240);
     padding: 2%;
@@ -22,11 +26,23 @@ article {
 article img {
 	text-align: center;
 	padding-left: 3%;
-	width: 30%;
+	width: 100%;
+}
+
+article h3 {
+	text-align: center;
+	padding-left: 3%;
+	font-size: 2em;
 }
 
 article p {
 	text-align: center;
+}
+
+article ul {
+	text-align: left;
+	padding-top: 3%;
+	font-size: 1.5em;
 }
 
 figure {
@@ -51,6 +67,10 @@ aside {
     padding: 10px;
     margin: 10px 0;
     border-left: 4px solid #007bb5;
+}
+
+aside h1 {
+	font-size: 2em;
 }
 
 .frame {
@@ -79,25 +99,7 @@ aside {
 
 .content {
 	display: flex;
-	align-items: flex-start; /* align elements vertically */
-	box-sizing: border-box;
 	justify-content: space-between;
-}
-
-.text-content {
-	flex-direction: column;
-	padding-bottom: 0;
-	width: 35%;
-}
-
-.text-content h2, h3 {
-	text-align: center;
-	padding: 0;
-	margin: 0 0 5px 0;
-}
-
-.text-content ul {
-	padding-top: 5%;
 }
 
 #story {
@@ -106,8 +108,9 @@ aside {
 }
 
 #story img {
-	width: 30%;
-	height: auto;
+	width: 33%;
+	height: 100%;
+	padding: 3%;
 }
 
 #story p {
@@ -116,7 +119,11 @@ aside {
 
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 740px), print {
+@media screen and (min-width: 751px), print {
+
+	section {
+		font-size: 1em;
+	}
 
 	grid {
 		display: grid;
@@ -137,6 +144,22 @@ aside {
 		box-shadow: 8px 8px 10px #808080;
 	}
 
+	article h3 {
+		text-align: center;
+		padding-left: 3%;
+		font-size: 1.5em;
+	}
+	
+	article ul {
+		text-align: left;
+		padding-top: 3%;
+		font-size: 1em;
+	}
+	
+	article img {
+		width: 30%;
+	}
+
 	aside {
 		text-align: center;
 		font-size: 1.25em;
@@ -155,6 +178,29 @@ aside {
 
 	.grid-item4 {
 		grid-column: 1 / span 3;
+	}
+
+	.content {
+		display: flex;
+		align-items: flex-start; /* align elements vertically */
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+	
+	.text-content {
+		flex-direction: column;
+		padding-bottom: 0;
+		width: 35%;
+	}
+	
+	.text-content h2, h3 {
+		text-align: center;
+		padding: 0;
+		margin: 0 0 5px 0;
+	}
+	
+	.text-content ul {
+		padding-top: 5%;
 	}
 
 }

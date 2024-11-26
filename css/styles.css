@@ -214,7 +214,7 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 740px), print {
+@media screen and (min-width: 751px), print {
 
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 	.tablet-desktop {
@@ -427,7 +427,7 @@ footer a {
 	
 	nav li a:hover {
 		color: #373684;
-		background-color: #fff;
+		background-color: rgba(240, 240, 240);
 	}
 	
 	/* Desktop Viewport: Style Rules for main content */

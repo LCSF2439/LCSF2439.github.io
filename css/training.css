@@ -1,0 +1,62 @@
+/*
+Author: Fernando Ferreyra
+Date: 2024-11-26
+File Name: training.css
+*/
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Table caption styling */
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Header cell styling */
+th {
+    background-color: #4645a8;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Regular cell styling */
+td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+/* Alternating row colors */
+tbody:nth-child(even) {
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+/* Alternating row colors */
+tbody:nth-child(odd) {
+    background-color: #e5e9fc;
+}
+
+tbody:hover {
+	background-color: #00177d5b;
+}
+
+
+/* Product images styling */
+.product-image {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Optional: Styling for the instructor names to stand out */
+.bold {
+    font-weight: bold;
+}
