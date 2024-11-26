@@ -4,11 +4,18 @@ Date: 2024-11-26
 File Name: training.css
 */
 
+.table-container {
+    width: 100%;
+    overflow-x: auto;  /* Horizontal scroll on small screens */
+    margin-bottom: 20px;
+}
+
 /* General table styling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    min-width: 200px;  /* Prevents the table from becoming too narrow */
 }
 
 /* Table caption styling */
@@ -59,4 +66,39 @@ tbody:hover {
 /* Optional: Styling for the instructor names to stand out */
 .bold {
     font-weight: bold;
+}
+
+/* Media query for small screens (max-width 768px) */
+@media screen and (max-width: 768px), print {
+    
+    table, tbody, th, td, tr {
+        display: block;  /* Converts table elements to block layout */
+    }
+
+    thead {
+        display: none;  /* Hides the table header on small screens */
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+    }
+
+    td::before {
+        content: attr(data-label);  /* Adds column labels for each cell */
+        font-weight: bold;
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    /* Reduced product image size for small screens */
+    .product-image {
+        width: 80px;
+    }
 }
