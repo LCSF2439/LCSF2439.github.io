@@ -4,14 +4,17 @@
 <head>
 	<title>BioChill Technologies</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/team.css">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<!-- Use the header area for the website name or logo -->
 	<header>
-		<a href="index.html"><img src="images/logo_4.png" alt="BioChill logo"></a>
+		<a href="index.html" class="logo_banner"><img src="images/logo_4.png" alt="BioChill logo"></a>
+		<a href="index.html" class="only_text" ><img src="images/logo_text.png" alt="BioChill text"></a>
 	</header>
 	
 	<!-- Use the nav area to add hyperlinks to other pages within the website -->
@@ -30,6 +33,87 @@
 	
 	<!-- Use the main area to add the main content of the webpage -->
 	<main>
+		<section>
+            <h2>Who We Are</h2>
+            <p>We foster a collaborative, innovative environment with a dedicated team of experts. Their passion and skills drive our mission to support the biotech, pharmaceutical, and healthcare industries.</p>
+        </section>
+
+		<div class="grid">
+			<figure class="frame">
+				<a href="about.html"><img src="images/executive_4.png" alt="Executive leadership team"></a>
+				<figcaption class="pic-text">Executive Team</figcaption>
+			</figure>
+
+			<figure class="frame">
+				<a href="specials.html"><img src="images/worker_6.png" alt="Engineering team working in a lab"></a>
+				<figcaption class="pic-text">Engineering & R&D</figcaption>
+			</figure>
+			
+			<figure class="frame">
+				<a href= "contact.html"><img src="images/executive_5.png" alt="Customer support team"></a>
+				<figcaption class="pic-text">Customer Support</figcaption>
+			</figure>
+		</div>
+
+        <section>
+            <h2>Our Team</h2>
+            <article class="content">
+				<img src="images/executive_3.png" alt="Executives and Leadership" class="round">
+				<div class="text-content">
+					<h3>Executives and Leadership</h3>
+					<ul>
+						<li>Leading cold storage innovation.</li>
+						<li>Expertise in biotech and refrigeration.</li>
+						<li>Ethical and transparent practices.</li>
+						<li>Global healthcare partnerships.</li>
+					</ul>
+				</div>
+				<img src="images/executive_2.png" alt="Executives and Leadership" class="round">
+            </article>
+
+			<article class="content">
+				<img src="images/worker_3.png" alt="Executives and Leadership" class="round">
+				<div class="text-content">
+					<h3>Engineering & R&D</h3>
+					<ul>
+						<li>Advanced cold storage solutions.</li>
+						<li>Precise temperature control.</li>
+						<li>Energy-efficient technologies.</li>
+						<li>Continuous improvement collaboration.</li>
+					</ul>
+				</div>
+				<img src="images/worker_5.png" alt="Executives and Leadership" class="round">
+            </article>
+
+			<article class="content">
+				<img src="images/marketing_4.png" alt="Marketing people in meeting" class="round">
+				<div class="text-content">
+					<h3>Marketing and Sales</h3>
+					<ul>
+						<li>Reliable cold storage solutions.</li>
+						<li>Expert customer support.</li>
+						<li>Global market expansion.</li>
+						<li>Client preservation education.</li>
+					</ul>
+				</div>
+				<img src="images/marketing_2.png" alt="Sales people brainstorming" class="round">
+            </article>
+        </section>
+
+        <aside class="tablet-desktop grid-item4">
+            <h1>Our Story</h1>
+			<div id="story">
+				<p>In a world where scientific progress saves lives every day, keeping biological materials safe is crucial.</p>
+				<img src="images/story_1.png" alt="Scientists in old lab" class="round">
+				<p>They saw how poor storage could harm research and delay treatments. Inspired to make a difference, they created precise and reliable cooling solutions to protect these vital materials.</p>
+			</div>
+			<div id="story">
+				<p><span class="action">Founded in 2015</span>, BioChill Technologies meet this need by preserving life-saving materials with advanced cooling technology.</p>
+				<img src="images/story_2.png" alt="Scientists working" class="round">
+				<p>Our story began with a dedicated team of engineers and biologists who knew how fragile vaccines, specimens, and medicines are.</p>
+			</div>
+        </aside>
+
 	</main>
 	
 	<!-- Use the footer area to add webpage footer content -->

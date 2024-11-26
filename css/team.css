@@ -1,0 +1,186 @@
+/*
+Author: Fernando Ferreyra
+Date: 2024-11-25
+File Name: team.css
+*/
+
+/* Mobile Viewport */
+
+section {
+    padding: 1%;
+    margin: 1% 0;
+}
+
+article {
+    background-color: rgb(240, 240, 240);
+    padding: 2%;
+    margin: 1% 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+	text-align: center;
+	padding-left: 3%;
+	width: 30%;
+}
+
+article p {
+	text-align: center;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    margin-right: 1%;
+}
+
+figcaption {
+    font-style: italic;
+	border-radius: 16px;
+}
+
+aside {
+    background-color: #e8f4f8;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #007bb5;
+}
+
+.frame {
+	position: relative;
+	max-width: 90%;
+	margin: 1% auto;
+	border-radius: 16px;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+	font-family: 'Roboto', 'Verdana', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+.content {
+	display: flex;
+	align-items: flex-start; /* align elements vertically */
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+.text-content {
+	flex-direction: column;
+	padding-bottom: 0;
+	width: 35%;
+}
+
+.text-content h2, h3 {
+	text-align: center;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+.text-content ul {
+	padding-top: 5%;
+}
+
+#story {
+	display: flex;
+	padding: 1% 2%;
+}
+
+#story img {
+	width: 30%;
+	height: auto;
+}
+
+#story p {
+	flex: 1; /* Allow the text to take up the remaining space */
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 740px), print {
+
+	grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	.pic-text {
+		font-size: 2em;
+		padding: 0;
+	}
+
+	.frame {
+		opacity: 1;
+	}
+	
+	.frame:hover {
+		box-shadow: 8px 8px 10px #808080;
+	}
+
+	aside {
+		text-align: center;
+		font-size: 1.25em;
+		font-style: italic;
+		font-weight: bold;
+		padding: 2%;
+		background-color: rgba(204, 204, 204, 0.5);
+		box-shadow: 5px 5px 8px #000;
+		text-shadow: 5px 5px 5px #b3b3b3;
+		border-radius: 0 15px;
+	}
+
+	aside p {
+		font-size: 1em;
+	}
+
+	.grid-item4 {
+		grid-column: 1 / span 3;
+	}
+
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 1px;
+	}
+
+	.pic-text {
+		font-size: 1.5em;
+		padding: 0;
+	}
+
+	.frame {
+		opacity: 0.8;
+	}
+	
+	.frame:hover {
+		opacity: 1;
+		box-shadow: 8px 8px 10px #808080;
+	}
+
+}

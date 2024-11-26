@@ -1,0 +1,44 @@
+/*
+Author: Fernando Ferreyra
+Date: 2024-11-24
+File Name: about.css
+*/
+
+/* Mobile Viewport */
+#cryochill, #cryogenic, #medice {
+	margin: 0 3%;
+	justify-content: center;
+}
+
+#cryochill h3, #cryogenic h3, #medice h3 {
+	font-size: 1.5em;
+}
+
+#cryochill p, #cryogenic p, #medice p {
+	font-size: 1.5em;
+}
+
+#cryochill li, #cryogenic li, #medice li {
+	font-size: 1.2em;
+}
+
+#info {
+	clear: left;
+	background-color: #c0caf7;
+	padding: 1% 2%;
+}
+
+#info li {
+	font-size: 1.2em;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 800px), print {
+	
+	#cryochill, #cryogenic, #medice {
+		width: 27%;
+		float: left;
+		margin: 0 3%;
+	}
+
+}
