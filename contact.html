@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/contact.css">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,6 +33,103 @@
 	
 	<!-- Use the main area to add the main content of the webpage -->
 	<main>
+
+		<div class="contact_title">
+			<h1>Contact Us</h1>
+    		<p>We'd love to hear from you. Please fill out the form below:</p>
+		</div>
+		<form id="form_new" action="/submit-form" method="post">
+			<ol>
+				<li>Fill in your personal details.</li>
+				<li>Select the products or services you are interested in.</li>
+				<li>Submit your request for more information or support.</li>
+			</ol>
+			
+			<fieldset>
+				<legend>Personal Information</legend>
+				
+				<label for="Fname"><span>*</span>Full Name:</label>
+				<input type="text" id="Fname" name="name" placeholder="Your Name" required autofocus>
+
+				<label for="phone"><span>*</span>Phone:</label>
+				<input type="tel" name="phone" id="phone" placeholder="e.g., (123) 456-7890" required>
+
+				<label for="organization"><span>*</span>Organization:</label>
+       			 <input type="text" id="organization" name="organization" placeholder="Your Organization" required>
+
+        		<label for="role">Your Role:</label>
+        		<input type="text" id="role" name="role" placeholder="Your Role (e.g., Researcher, Doctor)">
+
+				<label for="email"><span>*</span>Email Address:</label>
+				<input type="email" id="email" name="email" placeholder="Your Email" required>
+				
+				<label for="date">Preferred Contact Date:</label>
+				<input type="date" id="date" name="date">
+			</fieldset>
+			
+			<fieldset>
+				<legend>Inquiry Details</legend>
+				
+				<label for="product">Product of Interest:</label>
+				<select id="product" name="product">
+					<option value="cold_storage">Cold Storage Unit</option>
+					<option value="cooling_system">Cooling System</option>
+					<option value="vaccine_preservation">Vaccine Preservation Tech</option>
+					<option value="biochill_cooling">BioChill Cooling Solution</option>
+					<option value="cryopreserve_system">CryoPreserve System</option>
+					<option value="medical_storage">Medical Storage Unit</option>
+					<option value="biosafe_freezer">BioSafe Freezer</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="material">Type of Material to Store:</label>
+				<select id="material" name="material">
+					<option value="vaccines">Vaccines</option>
+					<option value="biological_specimens">Biological Specimens</option>
+					<option value="pharmaceuticals">Pharmaceuticals</option>
+					<option value="tissues">Tissues</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="urgency">Level of Urgency:</label>
+				<select id="urgency" name="urgency">
+					<option value="low">Low</option>
+					<option value="medium">Medium</option>
+					<option value="high">High</option>
+					<option value="urgent">Urgent</option>
+				</select>
+				
+				<label><span>*</span>Inquiry Type:</label>
+				<label for="sales">
+					<input type="radio" id="sales" name="inquiry_type" value="sales" required> Sales
+				</label>
+				<label for="support">
+					<input type="radio" id="support" name="inquiry_type" value="support"> Support
+				</label>
+				<label for="consultation">
+					<input type="radio" id="consultation" name="inquiry_type" value="consultation"> Consultation
+				</label>
+				
+				<label>Additional Services:</label>
+				<label for="installation">
+					<input type="checkbox" id="installation" name="services" value="installation"> Installation
+				</label>
+				<label for="maintenance">
+					<input type="checkbox" id="maintenance" name="services" value="maintenance"> Maintenance
+				</label>
+				<label for="training">
+					<input type="checkbox" id="training" name="services" value="training"> Training
+				</label>
+				
+				<label for="comments">Comments or Questions:</label>
+				<textarea id="comments" name="comments" rows="4" placeholder="Your message here..."></textarea>
+			</fieldset>
+			
+			<button type="submit">Submit Request</button>
+			<button type="reset">Reset Form</button>
+		</form>
+		
+
 		<div id="contact">
 			
 			<h2>Ready to get started? Contact us today.</h2>

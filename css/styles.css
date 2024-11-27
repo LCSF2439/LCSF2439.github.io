@@ -113,7 +113,7 @@ main ul {
 }
 
 .tel-link {
-	background-color: #404040;
+	background-color: #f9f9f9;
 	padding: 2%;
 	margin: 0 auto;
 	width: 80%;
@@ -196,6 +196,25 @@ main ul {
 }
 
 /* end Style rules for page Specials */
+
+/* styles media.html */
+.video-section {
+	text-align: center;
+}
+
+.audio-section h4 {
+	font-style: italic;
+}
+
+video {
+	width: 100%;       
+    height: auto; 
+}
+
+audio {
+	width: 100%;
+	height: 60px;
+}
 
 
 /* Style rules for footer content */
@@ -370,6 +389,21 @@ footer a {
 
 
 	/* end Style rules for page Specials */
+
+	.video-section, .audio-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	video {
+		width: 50%;
+		border-radius: 8px;
+	}
+
+	audio {
+		width: 70%;
+	}
 	
 }
 
@@ -517,8 +551,8 @@ footer a {
 	}*/
 
 	/* here it was the .banner and benefit*/
-	
-	
+
+
 }
 
 /* Media Query for Intermediate Desktop Viewports */

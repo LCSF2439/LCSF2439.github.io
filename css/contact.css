@@ -1,0 +1,199 @@
+/*
+Author: Fernando Ferreyra
+Date: 2024-11-26
+File Name: contact.css
+*/
+
+span {
+	color: red;
+	padding-right: 1%;
+}
+
+.contact_title {
+	text-align: center;
+}
+
+
+/* General form styles */
+form {
+    width: 100%;                 /* Full container width */
+    max-width: 100%;             /* Prevents overflow */
+    margin: 0 auto;              /* Centered form */
+    padding: 15px;               /* Internal padding */
+    box-sizing: border-box;
+    background-color: #f9f9f9;   /* Soft background */
+    border: 1px solid #ccc;      /* Subtle border */
+    border-radius: 8px;
+}
+
+/* Styles for fieldsets and legends */
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: 1.1em;
+}
+
+/* Styles for labels and inputs */
+label {
+    display: block;              /* Takes up the full line */
+    margin: 8px 0 4px;           /* Vertical spacing */
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;                 /* Takes full width */
+    padding: 1%;
+    margin-bottom: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;      /* Includes padding in width */
+}
+
+/* Button styles */
+button {
+    width: 100%;                 /* Full width */
+    padding: 3%;
+    margin-top: 4%;
+    background-color: #373684;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;   /* Different color for reset */
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Ensure small elements stay aligned */
+label input[type="radio"],
+label input[type="checkbox"] {
+    display: inline-block;
+    width: auto;                 /* Maintain natural size */
+    vertical-align: middle;      /* Vertical alignment */
+}
+
+label[for="sales"],
+label[for="installation"]{
+    margin-top: 4%;
+}
+
+
+label[for="sales"],
+label[for="support"],
+label[for="consultation"],
+label[for="installation"],
+label[for="maintenance"],
+label[for="training"] {
+    margin-bottom: 4%;  /* additional space among labels */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    transform: scale(2);
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 751px), print {
+
+    /* Form container styling */
+    form {
+        width: 70%; 
+        margin: 1% auto;
+        padding: 2%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    /* Fieldset styling */
+    fieldset {
+        width: 95%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Legend styling */
+    legend {
+        font-weight: bold;
+    }
+
+    /* Label and input styling */
+    label {
+        display: block;
+        margin: 8px 0 4px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],   
+    select {
+        width: 80%;
+        font-size: 0.7em;
+    }  
+
+    input[type="date"],
+    textarea {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    /* Button styling */
+    button {
+        width: 40%;
+        padding: 1% 2%;
+        margin-top: 1%;
+        border: none;
+        border-radius: 4px;
+        background-color: #373684;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: #373684;
+        background-color: white;
+        font-weight: bolder;
+    }
+
+    input {
+        font-size: 0.7em;
+    }
+
+    select {
+        width: 40%;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+}
