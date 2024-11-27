@@ -60,6 +60,12 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;      /* Includes padding in width */
+    font-size: 1.1em;
+}
+
+input[type="date"],
+textarea {
+    font-size: 1.4em;
 }
 
 /* Button styles */
@@ -114,7 +120,7 @@ label[for="training"] {
 
 input[type="radio"], input[type="checkbox"] {
     width: auto;
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 
@@ -162,7 +168,11 @@ input[type="radio"], input[type="checkbox"] {
     input[type="date"],
     textarea {
         width: 80%;
-        font-size: 1em;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        width: auto;
+        transform: scale(2);
     }
 
     /* Button styling */
