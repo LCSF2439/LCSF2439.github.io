@@ -65,7 +65,7 @@ textarea {
 
 input[type="date"],
 textarea {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 /* Button styles */
@@ -168,6 +168,7 @@ input[type="radio"], input[type="checkbox"] {
     input[type="date"],
     textarea {
         width: 80%;
+        font-size: 1.1em;
     }
 
     input[type="radio"], input[type="checkbox"] {
