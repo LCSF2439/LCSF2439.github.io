@@ -24,9 +24,9 @@ File Name: about.css
 }
 
 #info {
+	width: 100%;
 	clear: left;
 	background-color: #c0caf7;
-	padding: 1% 2%;
 }
 
 #info h2 {

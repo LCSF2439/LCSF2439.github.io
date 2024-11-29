@@ -63,7 +63,7 @@ figcaption {
 }
 
 aside {
-    background-color: #e8f4f8;
+    background-color: rgba(204, 204, 204, 0.5);
     padding: 10px;
     margin: 10px 0;
     border-left: 4px solid #007bb5;
