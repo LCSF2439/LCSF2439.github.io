@@ -40,22 +40,12 @@ img {
 header {
 	position: relative;
 	top: 0;
-	/*width: 100%;
-	/*background-image: url('../images/logo_text.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 200px; */
 }
 
 header a img {
 	margin: 0 left;
 	max-height: 100%;
 }
-
-/*header img {
-	margin: 0 auto;
-}*/
 
 /* Style for rules for navigation area */
 nav {
@@ -309,9 +299,6 @@ footer a {
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 200px; /* Adjust the height of the banner */
-		/*text-align: center;
-		font-size: 3em;
-		color: #373684*/
 	}
 
 	header h1 {
@@ -403,7 +390,6 @@ footer a {
 		text-decoration: none;
 		border-radius: 5px;
 		width: 40%;
-		/*transition: background-color 0.1s ease; /* Smooth background transition */
 	}
 
 	.cta-button:hover {
@@ -481,9 +467,6 @@ footer a {
 		background-size: cover;
 		height: 200px; /* Adjust the height of the banner */
 		position: relative;
-		/*text-align: center;
-		font-size: 3em;
-		color: #373684*/
 	}
 
 	header h1 {
@@ -526,60 +509,6 @@ footer a {
 	
 	/* Desktop Viewport: Style Rules for main content */
 
-	/*main {
-		padding: 2%;
-		background-color: #e5e9fc;
-		overflow: auto;
-		font-family: 'Kanit', Verdana, sans-serif;
-		color:#373684;
-		text-align: justify;
-	}
-
-	main p {
-		font-size: 1.5em;
-	}
-
-	.action {
-		font-size: 1.5em;
-		color: #373684;
-		font-weight: bold;
-	}*/
-
-	/*
-	#cryochill, #cryogenic, #medice {
-		/*margin: 0 2%;*/
-	/*	width: 27%;
-		float: left;
-		margin: 0 3%;
-	}
-
-	#cryochill h3, #cryogenic h3, #medice h3 {
-		font-size: 1.5em;
-	}
-
-	#cryochill p, #cryogenic p, #medice p {
-		font-size: 1.5em;
-	}
-
-	#cryochill li, #cryogenic li, #medice li {
-		font-size: 1.2em;
-	}
-	
-
-	/*.equip {
-		width: 23%;
-	}*/
-
-	/*#info {
-		clear: left;
-		background-color: #c0caf7;
-		padding: 1% 2%;
-	}
-
-	#info li {
-		font-size: 1.2em;
-	}*/
-
 	#contact {
 		text-align: center;
 	}
@@ -595,18 +524,6 @@ footer a {
 		width: 90%;
 		height: 100vh;
 	}
-
-	/* Banner and images for specials content*/
-
-	/*body {
-		font-family: Arial, sans-serif;
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}*/
-
-	/* here it was the .banner and benefit*/
-
 
 }
 

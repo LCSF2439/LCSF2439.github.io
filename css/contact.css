@@ -203,8 +203,3 @@ input[type="radio"], input[type="checkbox"] {
     }
 
 }
-
-/* Media Query for Desktop Viewport */
-@media screen and (min-width: 1015px), print {
-
-}
